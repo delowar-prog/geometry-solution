@@ -18,10 +18,10 @@
             <button class="bg-sky-600 text-white px-8 py-2 rounded-lg text-xl hover:bg-sky-500">Blog</button>
         </div>
     </header>
-    <main class="lg:mx-10">
+    <main class="lg:mx-10 flex flex-col md:flex-row justify-center items-center md:items-start gap-5">
         <div class="card-container w-[75%] grid md:grid-cols-2 lg:grid-cols-3 gap-5">
-            <div class="card w-full border flex items-center flex-col p-8 gap-5">
-                <img class="w-[80%]" src="images/triangle.png" alt="">
+            <div class="card w-full border flex items-center flex-col p-8 gap-5 rounded cursor-pointer">
+                <img class="w-[80%] h-3/4" src="images/triangle.png" alt="">
                 <div class="text-center">
                     <h1 class="text-xl mt-4 font-bold">Triangle</h1>
                     <p class="my-2">Area (A) =0.5 <i class="fa-solid fa-xmark"></i> b <i class="fa-solid fa-xmark"></i> h</p>
@@ -30,29 +30,59 @@
                     <button class="bg-sky-600 text-white w-full py-1 mt-5 rounded-lg text-xl hover:bg-sky-500">Calculate</button>
                 </div>
             </div>
-            <div class="card w-full border flex items-center flex-col p-8 gap-5">
-                <img class="w-[80%]" src="images/triangle.png" alt="">
+            <div class="card w-full border flex items-center flex-col p-8 gap-5 rounded cursor-pointer">
+                <img class="w-[80%] h-3/4" src="images/rectangle.png" alt="">
                 <div class="text-center">
-                    <h1 class="text-xl mt-4 font-bold">Triangle</h1>
-                    <p class="my-2">Area (A) =0.5 <i class="fa-solid fa-xmark"></i> b <i class="fa-solid fa-xmark"></i> h</p>
+                    <h1 class="text-xl mt-4 font-bold">Rectangle</h1>
+                    <p class="my-2">Area (A) =W <i class="fa-solid fa-xmark"></i> I</p>
+                    <input class="w-3/12 bg-slate-100 border " type="text" placeholder="W"> cm
+                    <input class="w-3/12 bg-slate-100 border " type="text" placeholder="I"> cm
+                    <button class="bg-sky-600 text-white w-full py-1 mt-5 rounded-lg text-xl hover:bg-sky-500">Calculate</button>
+                </div>
+            </div>
+            <div class="card w-full border flex items-center flex-col p-8 gap-5 rounded cursor-pointer">
+                <img class="w-[80%] h-3/4" src="images/parallelogram.png" alt="">
+                <div class="text-center">
+                    <h1 class="text-xl mt-4 font-bold">Parallelogram</h1>
+                    <p class="my-2">Area (A) =b <i class="fa-solid fa-xmark"></i> h</p>
                     <input class="w-3/12 bg-slate-100 border " type="text" placeholder="b"> cm
                     <input class="w-3/12 bg-slate-100 border " type="text" placeholder="h"> cm
                     <button class="bg-sky-600 text-white w-full py-1 mt-5 rounded-lg text-xl hover:bg-sky-500">Calculate</button>
                 </div>
             </div>
-            <div class="card w-full border flex items-center flex-col p-8 gap-5">
-                <img class="w-[80%]" src="images/triangle.png" alt="">
+            <div class="card w-full border flex items-center flex-col p-8 gap-5 rounded cursor-pointer">
+                <img class="w-[80%] h-3/4" src="images/rhombus.png" alt="">
                 <div class="text-center">
-                    <h1 class="text-xl mt-4 font-bold">Triangle</h1>
-                    <p class="my-2">Area (A) =0.5 <i class="fa-solid fa-xmark"></i> b <i class="fa-solid fa-xmark"></i> h</p>
+                    <h1 class="text-xl mt-4 font-bold">Rhombus</h1>
+                    <p class="my-2">Area (A) = 0.5 <i class="fa-solid fa-xmark"></i> d1 <i class="fa-solid fa-xmark"></i> d2</p>
+                    <input class="w-3/12 bg-slate-100 border " type="text" placeholder="d1"> cm
+                    <input class="w-3/12 bg-slate-100 border " type="text" placeholder="d2"> cm
+                    <button class="bg-sky-600 text-white w-full py-1 mt-5 rounded-lg text-xl hover:bg-sky-500">Calculate</button>
+                </div>
+            </div>
+            <div class="card w-full border flex items-center flex-col p-8 gap-5 rounded cursor-pointer">
+                <img class="w-[80%] h-3/4" src="images/pentagon.png" alt="">
+                <div class="text-center">
+                    <h1 class="text-xl mt-4 font-bold">Pentagon</h1>
+                    <p class="my-2">Area (A) = 0.5 <i class="fa-solid fa-xmark"></i> p <i class="fa-solid fa-xmark"></i> b</p>
                     <input class="w-3/12 bg-slate-100 border " type="text" placeholder="b"> cm
                     <input class="w-3/12 bg-slate-100 border " type="text" placeholder="h"> cm
+                    <button class="bg-sky-600 text-white w-full py-1 mt-5 rounded-lg text-xl hover:bg-sky-500">Calculate</button>
+                </div>
+            </div>
+            <div class="card w-full border flex items-center flex-col p-8 gap-5 rounded cursor-pointer">
+                <img class="w-[80%] h-3/4" src="images/ellipse.png" alt="">
+                <div class="text-center">
+                    <h1 class="text-xl mt-4 font-bold">Ellipse</h1>
+                    <p class="my-2 text-xl">Area (A) =<img class="w-1/12 inline" src="images/pi.png" alt="">   ab</p>
+                    <input class="w-3/12 bg-slate-100 border " type="text" placeholder="a"> cm
+                    <input class="w-3/12 bg-slate-100 border " type="text" placeholder="b"> cm
                     <button class="bg-sky-600 text-white w-full py-1 mt-5 rounded-lg text-xl hover:bg-sky-500">Calculate</button>
                 </div>
             </div>
         </div>
-        <div class="result-section w-[25%]">
-
+        <div class="result-section w-[25%] border h-screen min-h-full">
+            <h1 class="font-semibold text-xl text-center my-5 border-black border-b w-[50%] mx-auto">Area Calculation</h1>
         </div>
     </main>
 </body>
