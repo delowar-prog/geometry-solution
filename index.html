@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
+    <!-- header section -->
     <header class="flex flex-column md:flex-row lg:flex-row justify-between items-center bg-cyan-100 lg:mx-10 p-5 rounded lg:my-3">
         <div class="brand-name">
             <h1 class="text-3xl font-bold">Interactive</h1>
@@ -19,12 +20,15 @@
         <button onclick="window.location.href='./blog.html'" class="bg-sky-600 text-white px-8 py-2 rounded-lg text-xl hover:bg-sky-500">Blog</button>
         </div>
     </header>
+    <!-- Show Error Message -->
     <section>
         <div class="w-5/12 mx-auto my-2">
             <ul id="error" class="font-semibold text-xl bg-neutral-300 text-red-500 rounded p-2 hidden"></ul>
         </div>
     </section>
+    <!-- Main Content section -->
     <main class="lg:mx-10 flex flex-col md:flex-row justify-center items-center md:items-start gap-5">
+        <!-- Card Section  -->
         <div class="card-container w-[70%] grid md:grid-cols-2 lg:grid-cols-3 gap-5">
             <div onmouseenter="setHover(event)" class="card w-full border flex items-center flex-col p-8 gap-5 rounded cursor-pointer">
                 <img class="w-[80%] h-3/4" src="images/triangle.png" alt="">
@@ -87,19 +91,13 @@
                 </div>
             </div>
         </div>
+        <!-- Area Calculation Section  -->
         <div class="result-section w-[30%] border h-screen min-h-full">
             <h1 class="font-semibold text-xl text-center my-5 border-black border-b w-[50%] mx-auto">Area Calculation</h1>
             <div>
                 <div class="overflow-x-auto">
                     <table class="table w-full">
                       <tbody id="table-body">
-                        <!-- row 1 -->
-                        <!-- <tr>
-                          <th>1</th>
-                          <td>Cy Ganderton</td>
-                          <td>Quality Control Specialist</td>
-                          <td>Blue</td>
-                        </tr> -->
                       </tbody>
                     </table>
                   </div>
