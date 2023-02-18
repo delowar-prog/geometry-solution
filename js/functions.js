@@ -42,7 +42,9 @@ function areaCalculationById(shapeId, input1, input2){
         tr.innerHTML=`
         <td>${i}</td>
         <td>${itemName}</td>
-        <td>${area.toFixed(2)} <sub class='text-lg'> cm</sub> 2.</td>
+        <td><span>${area.toFixed(2)}cm</span><sup class='text-sm'> 2.</sup> </td>
+        <td><button class="p-2 my-10 bg-sky-500 text-white rounded text-sm">convert m<sup class='text-sm'>2</sup></button></td>
+        <td><button onclick="deleteResult(event)" class="text-xl text-red-500 font-bold bg-gray-300 px-2 rounded" ><i class="fa-solid fa-xmark"></i></button></td>
         `;
         tBody.appendChild(tr);
     }
@@ -69,5 +71,8 @@ function setHover(event){
     card.style.backgroundColor = "#" + randomColor;
   }
   
-//   document.getElementById('card-traingle').addEventListener("mouseenter", setHover);
-//   setBg();
+// Delete result Item
+function deleteResult(event){
+    const targetElement=event.target;
+    const parent=targetElement.parentNode.parentNode.parentNode.parentNode.removeChild(targetElement.parentNode.parentNode.parentNode);
+}
