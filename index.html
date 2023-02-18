@@ -19,8 +19,13 @@
         <button onclick="window.location.href='./blog.html'" class="bg-sky-600 text-white px-8 py-2 rounded-lg text-xl hover:bg-sky-500">Blog</button>
         </div>
     </header>
+    <section>
+        <div class="w-5/12 mx-auto my-2">
+            <ul id="error" class="font-semibold text-xl bg-neutral-300 text-red-500 rounded p-2 hidden"></ul>
+        </div>
+    </section>
     <main class="lg:mx-10 flex flex-col md:flex-row justify-center items-center md:items-start gap-5">
-        <div class="card-container w-[75%] grid md:grid-cols-2 lg:grid-cols-3 gap-5">
+        <div class="card-container w-[70%] grid md:grid-cols-2 lg:grid-cols-3 gap-5">
             <div class="card w-full border flex items-center flex-col p-8 gap-5 rounded cursor-pointer">
                 <img class="w-[80%] h-3/4" src="images/triangle.png" alt="">
                 <div class="text-center">
@@ -76,13 +81,13 @@
                 <div class="text-center">
                     <h1 id="ellipse" class="text-xl mt-4 font-bold">Ellipse</h1>
                     <p class="my-2 text-xl">Area (A) =<img class="w-1/12 inline" src="images/pi.png" alt="">   ab</p>
-                    <input id="ellips-input-a" class="w-3/12 bg-slate-100 border " type="text" placeholder="a"> cm
-                    <input id="ellips-input-b" class="w-3/12 bg-slate-100 border " type="text" placeholder="b"> cm
+                    <input id="ellipse-input-a" class="w-3/12 bg-slate-100 border " type="text" placeholder="a"> cm
+                    <input id="ellipse-input-b" class="w-3/12 bg-slate-100 border " type="text" placeholder="b"> cm
                     <button id="btn-ellipse" class="bg-sky-600 text-white w-full py-1 mt-5 rounded-lg text-xl hover:bg-sky-500">Calculate</button>
                 </div>
             </div>
         </div>
-        <div class="result-section w-[25%] border h-screen min-h-full">
+        <div class="result-section w-[30%] border h-screen min-h-full">
             <h1 class="font-semibold text-xl text-center my-5 border-black border-b w-[50%] mx-auto">Area Calculation</h1>
             <div>
                 <div class="overflow-x-auto">
