@@ -47,3 +47,27 @@ function areaCalculationById(shapeId, input1, input2){
         tBody.appendChild(tr);
     }
 
+//Set Error to display
+function setError(id, msg){
+    const textField=document.getElementById(id);
+    textField.style.display="block";
+    const li=document.createElement('li');
+    li.innerHTML=msg;
+    textField.appendChild(li);
+}
+
+//remove message
+function removeError(){
+    const textField=document.getElementById('error');
+    textField.style.display="none";
+}
+
+//Rendom Color
+function setHover(event){
+    const card=event.target;
+    const randomColor = Math.floor(Math.random()*16777215).toString(16);
+    card.style.backgroundColor = "#" + randomColor;
+  }
+  
+//   document.getElementById('card-traingle').addEventListener("mouseenter", setHover);
+//   setBg();
