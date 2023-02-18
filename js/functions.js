@@ -33,3 +33,17 @@ function areaCalculationById(shapeId, input1, input2){
         }  
     }
 
+// Function to Display result 
+    let i=0;
+    function dispalyResult(itemName, area){
+        i+=1;
+        const tBody=document.getElementById('table-body');
+        const tr=document.createElement('tr');
+        tr.innerHTML=`
+        <td>${i}</td>
+        <td>${itemName}</td>
+        <td>${area.toFixed(2)} <sub class='text-lg'> cm</sub> 2.</td>
+        `;
+        tBody.appendChild(tr);
+    }
+
